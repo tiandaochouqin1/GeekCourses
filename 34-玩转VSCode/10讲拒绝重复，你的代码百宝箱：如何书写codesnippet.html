@@ -1,0 +1,342 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                10讲拒绝重复，你的代码百宝箱：如何书写codesnippet
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/2e/50/2e4150eeff1a4653e75d0db66d39da50.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>在上一讲中，我们提到了编程语言服务能给我们提供智能的自动补全，帮助我们减少重复代码的输入。这些补全，都是由编程语言提供的，它会分析当前代码的上下文，并给出合适的建议。</p>
+<p>但是有的时候，我们经常输入的代码是业务强相关的，语言服务没法做出优化；或者是一些我们经常使用的定式，比如循环语句、创建一个新的类或者一个 UI 控件，我们经常写类似的代码，只不过每次都要做细微的修改。对于这些代码，我们可以将它们抽象成模板，保存起来，等下次要使用的时候直接调用即可。</p>
+<p>这就是我们今天要讲的主题：<strong>代码片段（code snippet）</strong>。</p>
+<p><span class="orange">代码片段是对常用代码的一个抽象，它保留了大部分不变的代码，然后把需要经常变动的部分，换成变量，这样等下次调用它的时候，只需要把这些变量换成我们需要的就可以了。</span></p>
+<p>上面的这段描述，可能还是太抽象了，下面我们通过一个例子来看看代码片段究竟长什么样，以及是怎么来使用的。</p>
+<p>首先，我们打开命令面板，搜索“配置用户代码片段”（Configure User Snippets）并且执行。这时候我们会看到一个列表，让我们选择语言。这里我们依然选择 JavaScript 作为我们的示例语言，不用担心，代码都是非常简单和易于理解的。</p><!-- [[[read_end]]] -->
+<p><img src="https://static001.geekbang.org/resource/image/d1/56/d1485dcc77808b7f24d565c8468a9256.png" alt="" /></p>
+<center><span class="reference">命令面板，搜索“配置用户代码片段”并且执行</span></center>
+<p>选择完语言后，我们就能看到一个 JSON 文件被打开了，这个文件里的内容，现在都是被注释掉的。我们可以选中第七行到第十四行，按下 “Cmd+ /”取消注释。</p>
+<p><img src="https://static001.geekbang.org/resource/image/78/af/78ba80a1eab3975d477e78e0318144af.png" alt="" /></p>
+<center><span class="reference">JavaScript 代码片段模版</span></center>
+<p>此时，呈现在我们面前的这个 JSON 文件，就是我们今天要讲的主角：<strong>代码片段</strong>。</p>
+<pre><code>{
+    &quot;Print to console&quot;: {
+        &quot;prefix&quot;: &quot;log&quot;,
+        &quot;body&quot;: [
+            &quot;console.log('$1');&quot;,
+            &quot;$2&quot;
+        ],
+        &quot;description&quot;: &quot;Log output to console&quot;
+    }
+}
+</code></pre>
+<p>你已经看到了，这个代码片段文件，是一个 JSON 文件，它的根对象下面的所有子节点都是一个单独的代码片段，并能够被我们调用和插入编辑器。这个代码片段对象的键（key）是这个代码片段的名字，我们在书写时只要保证这个名字跟当前文件里的其他代码片段不冲突就可以了。</p>
+<p>在上面的例子里，这个代码片段的名字叫做 “Print to console”。这个代码片段对象的值，也就是花括号里的代码，必须要包含 “prefix” 前缀和 “body” 内容这两个属性。同时，这个值还可以包含 “description” 描述这个属性，但这个属性不是必须的。</p>
+<p>“prefix” 的作用是，当我们在编辑器里打出跟 “prefix” 一样的字符时，我们就能在建议列表里看到这个代码片段的选项，然后我们按下 Tab 键，就能够将这个代码片段的 “body” 里面的内容插入到编辑器里。如果这个代码片段有 “description” 这个属性的话，那么我们还能够在建议列表的快速查看窗口里看到这段 “description”。</p>
+<p>比如现在我们可以打开一个 JavaScript 文件（还以之前的一段代码为例），然后输入 log，你就能够在建议列表里看到 “Print to console”这个建议。</p>
+<p><img src="https://static001.geekbang.org/resource/image/a6/60/a62b189ddca00b644795104cac43db60.png" alt="" /></p>
+<center><span class="reference">输入 log 即可看到 Print to console 代码片段</span></center>
+<p>然后再按下回车或者 Tab 键，就能够将这个代码片段插入编辑器了。</p>
+<h2>Tab Stop</h2>
+<p>“body” 里的内容，并不只是一个纯文本，它其实是一个模板。要让它像模板一样工作，我们就需要先理解一个概念，叫做 <strong>Tab Stop</strong>。</p>
+<p>像我们现在研究的这个代码片段里，当 “body” 内容被插入到编辑器后，你会发现，内容里 的<code>$1</code>和 <code>$2</code>不见了，取而代之的是两个竖线。这<code>$1</code>和 <code>$2</code>就是 <span class="orange">Tab Stop，意思是，当我们按下 Tab 键之后，光标移动到的位置。</span>当这段代码片段被插入到编辑器后，编辑器会把光标移动到<code>$1</code>所在的位置，然后如果你再按一次 Tab 键，光标则会立刻移动到 <code>$2</code>的位置。</p>
+<p>如果没有这个功能，我们输入 <code>log</code> 后，只能自动地把 <code>console.log()</code> 插入到编辑器里，接下来我们需要手动地把光标移动到括号里面，然后填入我们想要打印的参数。这之后，当我们需要新起一行写代码时，还得按下 “Cmd + Enter”创建新的一行并将光标移动到下一行。但有了 Tab Stop后，上面的这些繁琐的操作就可以简化为一次 “Tab” 键了。</p>
+<p>在下面的动图里，我们可以看到，代码片段被插入编辑器中后，光标就被自动地放到了引号的中间；我们输入 “bar” 后，按下了 Tab 键，光标就又自动地移动到了下一行的开头，然后我们就可以继续输入代码了。</p>
+<p><img src="https://static001.geekbang.org/resource/image/dc/88/dc5af0985d661a6d578b84f6da2f8388.gif" alt="" /></p>
+<center><span class="reference">代码片段被插入编辑器中后，光标被自动地放到了引号的中间</span></center>
+<p>将光标移动到上一个 Tab Stop 的位置的快捷键也很好记，我们只要按下 “Shift + Tab” 就可以了。</p>
+<p>但要注意的是，Tab Stop 的作用，并不只是简单地减少重复操作，它还能够真正发挥模板的功效。</p>
+<p>当我们插入一段常用的代码，或循环语句，或Switch 语句，虽然大部分代码都是一样，但是也有很多地方需要根据当前的上下文修改，比如说参数的名字。在这样的代码片段中，我们可以在所有需要修改的地方插入 Tab Stop，当代码片段被插入编辑器后，我们只需要通过按下 “Tab”键，就可以快速地跳到这些位置，将它们修改成我们需要的值。</p>
+<h2>占位符</h2>
+<p>在我们插入 Tab Stop 的时候，除了 <code>$1</code>、 <code>$2</code> 这样的语法，我们还可以填入 <code>${1:label}</code>，在这个格式下，代码片段被插入编辑器里时，$1 的位置处，会预先填入 <code>label</code>这个值，并且 <code>label</code> 会被选中。</p>
+<p>对于这个值我们称之为<span class="orange">占位符，顾名思义，这个值是我们在代码片段中预先设置好的。</span>如果我们觉得这个值可以用，那就不需要修改了，直接按 Tab 键跳到下一个 Tab Stop 继续编辑。如果觉得要换成一个新的值，那么也只需直接打字就可以将其替换，因为这个占位符已经被光标选中了。</p>
+<p>这里我们对上面的代码片段进行一点修改：</p>
+<pre><code>    &quot;Print to console&quot;: {
+        &quot;prefix&quot;: &quot;log&quot;,
+        &quot;body&quot;: [
+            &quot;console.log(${1:i});&quot;,
+            &quot;$2&quot;
+        ],
+        &quot;description&quot;: &quot;Log output to console&quot;
+    }
+</code></pre>
+<p>我们将 <code>$1</code> 改成了 <code>${1:i}</code>，那么当log 这个代码片段被插入时，我们将看到<code>console.log(i);</code>，同时 <code>i</code> 被选中。比如在下面的循环语句里，我们就不用更改<code>i</code>了。</p>
+<pre><code>for (var i = 0; i &lt; 5; i++) {
+    
+}
+</code></pre>
+<p><img src="https://static001.geekbang.org/resource/image/f3/0e/f3b244140d988e06eb967c53ce8d270e.gif" alt="" /></p>
+<center><span class="reference">插入代码片段后，无需更改占位符</span></center>
+<p>而在接下来这个循环语句里，循环的 index 是 j，所以我们就需要将<code>i</code>换成 <code>j</code>。</p>
+<pre><code>for (var j = 0; j &lt; 5; j++) {
+    
+}
+</code></pre>
+<p><img src="https://static001.geekbang.org/resource/image/88/c6/88751cce15601917762a6342265774c6.gif" alt="" /></p>
+<center><span class="reference">插入代码片段后，将占位符改为 j</span></center>
+<p>上面我们提到了，有的时候如果占位符刚好是我们想要的，我们就不需要再做任何的修改了，我们可以按住 Tab 键，不断地跳过各个 Tab Stop，也可以直接按下 Escape 键，跳出代码片段的编辑模式，之后继续我们的其他编辑操作。</p>
+<h2>多光标</h2>
+<p>在前面的文章中，我们已经知道多光标能够大幅度减少重复劳动，而在代码片段里，我们也可以使用多光标的特性。</p>
+<p>上面提到我们可以用 ${1:label} 来指定 Tab Stop 和占位符，但其实我们也可以在代码片段的多个位置使用同样的 Tab Stop 。</p>
+<p>举个例子，我们可以在代码片段中三个不同的位置插入 $1，这样编辑器就会为这三个不同的位置，分别创建一个光标，然后当我们打字的时候，他们就会被一起修改。</p>
+<p>下面，我们就一起来给上面的代码片段加上多光标的特性。</p>
+<pre><code>    &quot;Print to console&quot;: {
+        &quot;prefix&quot;: &quot;log&quot;,
+        &quot;body&quot;: [
+            &quot;console.log(${1:i});&quot;,
+            &quot;console.log(${1:i} + 1); // ${1:i} + 1&quot;,
+            &quot;$2&quot;
+        ],
+        &quot;description&quot;: &quot;Log output to console&quot;
+    }
+</code></pre>
+<pre><code>for (var j = 0; j &lt; 5; j++) {
+    
+}
+</code></pre>
+<p><img src="https://static001.geekbang.org/resource/image/94/83/9498f729db204ec0e8e3cd3a99839683.gif" alt="" /></p>
+<center><span class="reference">插入了 log 这个代码片段，然后将循环的 index 换成了 j</span></center>
+<h2>预设变量</h2>
+<p>上面我们提到了，在每个 Tab Stop 的位置，我们可以提供占位符，也就是提前预设好一些值。但这些占位符是我们提前写在代码片段里的，跟当前代码的上下文往往没什么关系。不过，VS Code 的代码片段支持里，还提供了一种模板，叫做<strong>预设变量</strong>。</p>
+<p>比如说，我们想在代码片段里的某个位置使用剪切板的内容，那么我们在那个位置写上 <code>$CLIPBOARD</code> 就好了，如果我们希望插入代码片段后自己可以修改这个值，也可以将它放在一个 Tab Stop 里面，语法则是 <code>${1:$CLIPBOARD}</code>。</p>
+<p>除了剪切板，VS Code 还支持其他数十个预设值，大家可以按需自行<a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables">查看文档</a>，自己尝试。</p>
+<h2>小结</h2>
+<p>今天我们一起研究了代码片段这个功能，这可能是迄今为止内容最长一篇文章了，但是我依然只是介绍了代码片段的基本概念和使用。</p>
+<p>要想真正掌握它，你就需要练习上面的内容，并且自己多尝试，根据文档里介绍的各个知识点组合使用。对了，VS Code 的代码片段语法是基于 TextMate 的，不仅 VS Code，Atom 和 Sublime 也都支持这个语法，你可以在网上找些其他人分享的代码片段，通过阅读这些他人书写的代码片段来学习和精进，相信这也会是你一个不错的学习途径。</p>
+<hr />
+<p><img src="https://static001.geekbang.org/resource/image/92/06/92862660523add24b3168f22954fa506.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/5a/76/3f8dcda6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">陈亦凡</span>
+                            </div>
+                            <div class="bd">自问自答一下，我套用了vim配置管理的方法，将snippets的文件在一个github仓库中管理，然后`ln -s`软连接到Code&#47;User&#47;snippets目录下面，虽然麻烦一点，不过可以在机器间同步，另外用户配置和插件配置通过一个叫`settings sync`的插件通过gist可以直接同步。 <br></div>
+                            <span class="time">2018-10-16 10:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ce/90/fafbbe0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">mccrms</span>
+                            </div>
+                            <div class="bd">应该是${1:$CLIPBOARD}吧 <br></div>
+                            <span class="time">2018-10-04 09:51</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是的，漏了一个 $ 符号，谢谢指正</p>
+                                <p class="reply-time">2018-10-09 09:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c5/85/2651f4dd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">谢mingmin</span>
+                            </div>
+                            <div class="bd">能否在片段里面调用其他已有的片段呢 <br></div>
+                            <span class="time">2018-10-26 10:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c8/ef/e35cb9d3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">xnng</span>
+                            </div>
+                            <div class="bd">请问一下，有时候我希望敲出内容时，没够让我的代码前段显示在第一个位置，怎么调整智能提示的顺序呢？ <br></div>
+                            <span class="time">2018-10-20 14:28</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">&quot;editor.snippetSuggestions&quot;: &quot;top&quot;</p>
+                                <p class="reply-time">2018-10-22 11:32</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/5a/76/3f8dcda6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">陈亦凡</span>
+                            </div>
+                            <div class="bd">snippets有办法在机器间同步吗？ <br></div>
+                            <span class="time">2018-10-15 23:11</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">有，后面谷歌介绍的</p>
+                                <p class="reply-time">2018-10-17 12:01</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7e/5b/35005438.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">甄心cherishm</span>
+                            </div>
+                            <div class="bd">以前用vs就知道这个功能，只是一直用的不多。以后可以多用用 <br></div>
+                            <span class="time">2018-10-11 00:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/b3/26/cc28a05a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">悬炫</span>
+                            </div>
+                            <div class="bd">&quot;scope&quot;: &quot;javascript,typescript,javascript React&quot;,  如果我希望snippets能支持jsx语法，scope里面我应该怎么写呢，我发现我写javascript React或者jsx都不行，不写scope这个属性也不行，求大神指教，急 <br></div>
+                            <span class="time">2018-10-10 15:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/57/4f/6fb51ff1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">一步</span>
+                            </div>
+                            <div class="bd">这个和 代码提示，快捷键结合起来更强大 <br></div>
+                            <span class="time">2018-10-05 12:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/bf/bd/20f6d724.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">wustzjf</span>
+                            </div>
+                            <div class="bd">这个功能真心好用呐 <br></div>
+                            <span class="time">2018-10-04 22:15</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/c6/41/04d0b43d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">仰望星空</span>
+                            </div>
+                            <div class="bd">几个问题请教一下：<br>1. 如何列出所有snippets？<br>2. 预设变量，没有项目跟目录，有没有办法扩展预设变量？ <br></div>
+                            <span class="time">2018-10-04 15:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 可以，命令面板，搜索插入代码片段<br>2. 这个暂时还不支持</p>
+                                <p class="reply-time">2018-10-09 09:42</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/a4/be/39cc22f5.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">petit_kayak</span>
+                            </div>
+                            <div class="bd">这个工具真是神器啊！我居然今天才知道 <br></div>
+                            <span class="time">2018-10-04 14:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/74/86/abb7bfe3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吉泓铭</span>
+                            </div>
+                            <div class="bd">这个功能很强大随着专栏的逐渐展开，惊喜越来越多 <br></div>
+                            <span class="time">2018-10-04 11:00</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

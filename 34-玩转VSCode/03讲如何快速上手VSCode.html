@@ -1,0 +1,407 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                03讲如何快速上手VSCode?
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/04/9f/045396bbc0e65345f250fc49ace7619f.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>前面我们聊到了VS Code的历史以及定位，相信你已经开始摩拳擦掌，跃跃欲试希望充分利用VS Code来提高编程效率了。但是别急，万事总有个开头儿，今天我们先来聊一下 VS Code 的安装和更新、VS Code 初次使用的指引界面、语言设置，以及命令行使用等基础问题，以便你能快速上手VS Code。</p>
+<h2>安装与版本选择</h2>
+<p>VS Code 有两个不同的发布渠道：一个是我们经常使用的稳定版（Stable），每个月发布一个主版本；另外一个发布渠道叫做 Insiders，每周一到周五 UTC 时间早上6点从最新的代码发布一个版本，这也是 VS Code 团队在使用的版本，目标是可以第一时间用上自己新加的功能并及时发现问题。微软内部对这个做法还有个专门的名词，叫做“吃自己的狗粮” (eat your own dog food)。</p>
+<p>除去VS Code核心开发团队，现在全世界大概还有一万五千名用户在使用 Insiders 版本。不过，如果你刚刚接触 VS Code ，那么稳定版本肯定更适合你。但如果你已经使用 VS Code 有一段时间，我还是非常推荐你试一试 Insiders ，因为使用这个版本有这样几个好处：</p>
+<ol>
+<li>
+<p><strong>你可以尽早使用上最新的功能</strong>。一般来说新功能会先在 Insiders 版本里上线，运行一段时间稳定后，会随着当月的稳定版本发布。但如果是改动比较大的功能，比如编辑器网格布局、自定义 Windows 菜单栏，可能会在 Insiders 里运行两个月才会最终推向所有用户。</p>
+</li>
+<li>
+<p><strong>你可以深度参与 VS Code 产品的开发过程</strong>。一个新功能首次被添加到 Insiders 版本时，往往是不成熟的，而你可以在 GitHub 上第一时间反馈你对这个新功能的看法和建议，甚至可以为它贡献代码。</p>
+</li>
+</ol><!-- [[[read_end]]] -->
+<p>下载和安装 Insiders 版本也很简单，打开 VS Code 官网（<a href="https://code.visualstudio.com">https://code.visualstudio.com</a>），点击绿色下载按钮旁的下拉按钮，就可以针对不同平台选择可用的 Insiders 版本了。而且，VS Code 安装完之后就会自动更新，你并不需要前往官网重新下载。同时，专栏里面使用的 VS Code 版本也将是最新的稳定版，这样便于大家理解。</p>
+<p><img src="https://static001.geekbang.org/resource/image/89/68/8993c829a4f234e728902c6ab2d64c68.png" alt="" /></p>
+<center><span class="reference">在VS Code官网下载Insiders版本</span></center>
+<h2>初次使用</h2>
+<p>VS Code 第一次启动后会显示一个“欢迎使用”的页面，这个界面主要是方便你快速打开文件、文件夹以及访问历史文件，同时还会附带一些帮助信息，比如“快捷键速查表”。</p>
+<p><img src="https://static001.geekbang.org/resource/image/58/4f/588bcd217ad7d2c5d18cbab0b1781a4f.png" alt="" /></p>
+<center><span class="reference">首次启动VS Code，你将看到的“欢迎使用”页面</span></center>
+<p>你可以多多点击和访问这个界面上的各种链接和按钮，主动发现和了解你可能感兴趣的功能。这里我主要讲一下“学习”区域的三个功能：<strong>命令面板、界面概览和交互式演习场</strong>。</p>
+<h3>1. 命令面板</h3>
+<p>首先来看命令面板，它是 VS Code 快捷键的主要交互界面，你可以通过 F1 或者“Cmd+Shift+P ”(Windows 上是 “Ctrl+Shift+P”)打开。<span class="orange">这里提醒一下，如无特殊说明，我在这个专栏里默认基于macOS平台进行讲解，但也会本着为你提供方便的原则，同时给出Windows或Linux平台下的操作说明。</span>通过编辑器来实现高效编程的思路是一致的，这和具体的使用平台无关，所以你大可不必为此担心。<br />
+<img src="https://static001.geekbang.org/resource/image/24/0d/2471149edc2c94a6745a34b5c917d00d.png" alt="" /></p>
+<center><span class="reference">同时按下 Cmd + Shift + P，就可以打开命令面板</span></center>
+<p>你可以在命令面板中快速搜索命令并且执行。如果你的 VS Code 是简体中文版，那么你可以在命令面板里使用中文或者英文来搜索命令。VS Code 的绝大多数命令都可以在命令面板里搜到，所以熟练使用命令面板，你就可以摆脱鼠标，完全通过键盘操作来完成全部编码工作。</p>
+<h3>2. 界面概览</h3>
+<p>第二个是界面概览，它展示了 VS Code 默认界面里的不同部件的位置、名称和快捷键。VS Code 强调无鼠标操作，但是对于初学者而言快捷键的记忆是个麻烦，这个界面恰好可以帮助你渡过最初的不适应阶段。</p>
+<p><img src="https://static001.geekbang.org/resource/image/67/78/67025c889d9e28fecc7d4a71e3904c78.png" alt="" /></p>
+<center><span class="reference">界面概览，展示 VS Code 默认界面里的不同部件的位置、名称和快捷键</span></center>
+<h3>3. 交互式演习场</h3>
+<p>第三个是交互式演习场，打开这个界面，你会看到一个全英文的初学者教程，其中通过各种交互示例给出了 VS Code 的核心功能，展示了一些高级代码编辑功能的使用，每个功能都会有一个代码片段和编辑器供你实时使用。</p>
+<p><img src="https://static001.geekbang.org/resource/image/2a/1d/2a576d602139942774ae90c907aeb81d.png" alt="" /></p>
+<center><span class="reference">交互式演习场（Interactive Editor Playground）</span></center>
+<p>这个界面现在还没有中文版，不过没有关系，它里面提到的所有功能我都会在这个专栏中详细介绍。</p>
+<h2>命令行的使用</h2>
+<p>接下来我们看一下命令行的使用。命令行你应该不陌生，我们脑海中的大神级程序员都是可以在Linux中随意敲打长串的命令，或是与黑客斗智斗勇，或是解决某个紧急的线上问题。而对于VS Code而言，最基础的命令行当然是让你能够不动鼠标，就能快速打开界面了。</p>
+<p>如果你是 Windows用户，安装并重启系统后，你就可以在命令行中使用 <code>code</code> 或者 <code>code-insiders</code>了，如果你希望立刻而不是等待重启后使用，可以将 VS Code 的安装目录添加到系统环境变量 <code>PATH</code>中， Windows 64 位下的 VS Code 安装路径是 <code>C:\Program FIles\Microsoft VS Code</code>下。</p>
+<p>如果你是在 macOS 上使用，安装后打开命令面板，搜索<code>Shell 命令：在 PATH 中安装 “Code” 命令</code>并执行，然后重启终端模拟就可以了。</p>
+<p><img src="https://static001.geekbang.org/resource/image/6a/3f/6a4fdbed2a3246229b82accd094ae33f.png" alt="" /></p>
+<center><span class="reference">搜索 `Shell 命令，在 PATH 中安装 “Code” 命令`并执行</span></center>
+<p>如果你是使用 Linux 的话，我相信你一定知道怎么在终端中调用 VS Code。</p>
+<p>接下来，我们看一下 VS Code 的命令行都支持哪些操作，这里我先运行了 <code>code --help</code>来打印出 VS Code 命令行所支持的所有参数。</p>
+<p><img src="https://static001.geekbang.org/resource/image/02/4c/020aa31682cd5e5485089193f39df94c.png" alt="" /></p>
+<center><span class="reference">运行 `code --help`的结果页面</span></center>
+<p>最基本的命令行使用方式是在 <code>code</code> 命令后加上文件或者文件夹的地址，这样VS Code 就会在一个新窗口中打开这个文件或文件夹。</p>
+<p>如果你希望使用已经打开的窗口来打开文件，可以在 <code>code</code> 命令后添加参数 <code>-r</code>来进行窗口的复用。</p>
+<p><img src="https://static001.geekbang.org/resource/image/6c/b9/6ca4986f77f1da58759801894d6cf8b9.gif" alt="" /></p>
+<center><span class="reference">在已经打开的窗口来打开当前目录</span></center>
+<p>你也可以使用参数 <code>-g &lt;file:line[:character]&gt;</code>打开文件，然后滚动到文件中某个特定的行和列，比如输入<code>code -r -g package.json:128</code>命令，你就可以打开 package.json 这个文件，然后自动跳转到 128 行。这个命令可以方便你从终端里快速地在 VS Code 里打开一个文件进行预览，一个特别常见的例子就是当我们使用脚本执行某个命令，这个命令告诉我们某个文件的某一行出现了错误，我们就能够快速定位了。</p>
+<p><img src="https://static001.geekbang.org/resource/image/2b/30/2b0ac41fcf93cfb74dc4c2712b8ab630.gif" alt="" /></p>
+<center><span class="reference">通过命令行打开文件，并滚动至特定的行</span></center>
+<p>VS Code 也可以用来比较两个文件的内容，你只需使用 <code>-d</code>参数，并传入两个文件路径，比如输入 <code>code -r -d a.txt b.txt</code>命令，就可以比较a.txt和b.txt两个文件的内容了。有了这个命令，你就可以既使用命令行运行脚本，也可以借助 VS Code 的图形化界面进行文件内容的对比了。</p>
+<p><img src="https://static001.geekbang.org/resource/image/c7/d4/c76cf6fed94d1eb1722d949ee1e632d4.gif" alt="" /></p>
+<center><span class="reference">通过命令行，比较两个文件的内容</span></center>
+<p>VS Code 命令行除了支持打开磁盘上的文件以外，也接受来自管道中的数据。这样你就可以将原本在命令行中展示的内容，实时地展示在 VS Code 里，然后在编辑器中搜索和修改。比如，你可以把当前目录下所有的文件名都展示在编辑器里，此时只需使用<code>ls | code -</code>命令。</p>
+<p><img src="https://static001.geekbang.org/resource/image/4b/3e/4b7b576d51156c4f80fd4957135ffe3e.gif" alt="" /></p>
+<center><span class="reference">将命令行 ls 的执行结果在 VS Code 的编辑器中打开</span></center>
+<p>另外，VS Code 命令行还能够管理插件，查看 VS Code 的运行情况，记录和分析 VS Code 运行性能，这些我会在之后的章节介绍。当然，你也可以现在小试牛刀，试试它的威力。</p>
+<p>在我的日常工作中，经常会使用终端来操作脚本。这个时候，如果我需要打开 VS Code，使用命令行来打开 VS Code 再方便不过了。另外 VS Code 的命令行的各个参数，其实能够定制 VS Code 是怎样运行的，比如<code>--disable-extensions</code>、<code>--max-memory</code>，它们都有特殊的应用场景。当然，如果你发现了哪个配置是你特别希望默认就打开的，那么你可以在 shell 环境里创建一个别名 (alias)，而不用局限于 <code>code</code> 这个命令。</p>
+<p>因为这个专栏的大部分内容都是操作相关，所以在专栏的最后，我想你都应该迫不及待地去练习、学习这些新特性，而我呢，则会在评论区静候你的反馈，有任何问题，都可以留言告诉我，我尽力帮你解决。</p>
+<p>加油，你才刚刚踏入旅程。</p>
+<hr />
+<p><img src="https://static001.geekbang.org/resource/image/92/06/92862660523add24b3168f22954fa506.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/86/fb/4add1a52.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">兵戈</span>
+                            </div>
+                            <div class="bd">细致入微，原来命令行下vs code还有这么多用法！比如比较文件，比如打开管道内容，马上就能用啊！期待后续的章节 <br></div>
+                            <span class="time">2018-09-18 06:37</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c7/e4/b2e37c13.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">时光mr</span>
+                            </div>
+                            <div class="bd">老师最后能把文中说到的命令在结尾总结下方便查看嘛  <br></div>
+                            <span class="time">2018-09-18 17:42</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c5/0c/6f07ebda.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">麦克</span>
+                            </div>
+                            <div class="bd">如何在终端和文件之间快速切换，每次定义终端都需要鼠标点过去的 <br></div>
+                            <span class="time">2018-09-18 10:09</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">Ctrl + `</p>
+                                <p class="reply-time">2018-09-18 10:59</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/58/93/e94b727f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">思考问题的熊</span>
+                            </div>
+                            <div class="bd">windows 下linux子系统使用管道，ls | code - 只打开了一个新的窗口没有显示目录内容，这个可以解决么 <br></div>
+                            <span class="time">2018-09-18 09:23</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">WSL 可能存在 bug 我去研究研究</p>
+                                <p class="reply-time">2018-09-18 11:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/4e/a0/67782623.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">贺子华</span>
+                            </div>
+                            <div class="bd">使用code命令报  no  code  found  or  selected <br></div>
+                            <span class="time">2018-09-18 23:14</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c4/6b/8cbe18bb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">fZero</span>
+                            </div>
+                            <div class="bd">code --help命令无法显示相关帮助文档；<br>没有遇到什么报错，就是正常执行，但是没有输出。<br>如果反馈可以提交秃瓢就更好了。 <br></div>
+                            <span class="time">2018-09-22 16:28</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/f3/56/5175b32f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">NikolaDi</span>
+                            </div>
+                            <div class="bd">1、如果某个终端卡住了，只能关掉重新启动一个吗？<br><br>2、怎么在当前激活文件下用快捷键开启终端？ <br></div>
+                            <span class="time">2018-09-19 22:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 可以新建一个终端<br>2. Ctrl + `</p>
+                                <p class="reply-time">2018-09-20 10:01</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c6/c3/f44d9494.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">邹颖</span>
+                            </div>
+                            <div class="bd">`code`在命令行中没有找到对应的命令的解决方式：<br>按`Command+Shift+P` (Mac OSX)，输入`install path`，会出现：在PATH下安装code命令。 <br></div>
+                            <span class="time">2018-09-19 12:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/4a/d1/36edfe57.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">AbLee</span>
+                            </div>
+                            <div class="bd">ctrl ＋`在我的电脑上失效了，不知道是什么原因，安装了vim插件 <br></div>
+                            <span class="time">2018-09-19 08:49</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/4e/a0/67782623.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">贺子华</span>
+                            </div>
+                            <div class="bd">交互式演习场在哪打开 <br></div>
+                            <span class="time">2018-09-18 22:59</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/d6/21/e4801b1c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ambler</span>
+                            </div>
+                            <div class="bd">什么叫来自管道中的数据？是指来自终端的数据吗？ <br></div>
+                            <span class="time">2018-09-18 09:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我指的是 https:&#47;&#47;zh.wikipedia.org&#47;zh-hans&#47;%E7%AE%A1%E9%81%93_(Unix)</p>
+                                <p class="reply-time">2018-09-18 11:00</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/90/cb/72063354.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">~记得微笑∩﹏∩</span>
+                            </div>
+                            <div class="bd">原来 linux 的一些操作也可以用到 vs code 里，很棒 <br></div>
+                            <span class="time">2018-10-26 18:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/47/76/6e7bdcc1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">云飞扬</span>
+                            </div>
+                            <div class="bd">能不能用英文做演示，技术用中文基金太难受了 <br></div>
+                            <span class="time">2018-10-12 10:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c9/d6/ba30e083.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">洛桤</span>
+                            </div>
+                            <div class="bd">真的干货满满，用了这么久的vscode，我一直不知道还能用命令行工具…… <br></div>
+                            <span class="time">2018-10-02 14:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/40/f4/3372aec6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">大中华区低端人口</span>
+                            </div>
+                            <div class="bd">管道能不能跳转到指定行 我试不出来 <br></div>
+                            <span class="time">2018-10-01 22:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c5/21/771e27da.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">处处百花香</span>
+                            </div>
+                            <div class="bd">我这面板标题后面没有显示快捷键 <br></div>
+                            <span class="time">2018-09-25 17:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ce/15/fb807630.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">wyq</span>
+                            </div>
+                            <div class="bd">我想知道老师你的mac终端怎么设置成那种感觉的. 一直没设置明白 <br></div>
+                            <span class="time">2018-09-23 15:07</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我用的是 oh my zsh</p>
+                                <p class="reply-time">2018-09-25 11:02</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/68/63/1511e341.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">羊羊羊</span>
+                            </div>
+                            <div class="bd">老师，那些code -r输入的窗口是怎么打开的呀？我只能打开debug console输入东西，其他地方都没有老师输入的那个界面 <br></div>
+                            <span class="time">2018-09-22 05:56</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7c/b3/40e8fa1d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">风的叹息</span>
+                            </div>
+                            <div class="bd">很详细！ 特别想看的是某些操作的最佳实践或者结合常见IDE或编辑器的对比，诸如设计上的一些取舍的原则，想来都挺有意思的 <br></div>
+                            <span class="time">2018-09-21 23:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ca/ed/afae7f16.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">麟 Goku</span>
+                            </div>
+                            <div class="bd">&gt;emmet: balance (inward)<br>作用是什么？ <br></div>
+                            <span class="time">2018-09-19 15:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个后面我们会具体讲的</p>
+                                <p class="reply-time">2018-09-20 10:08</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

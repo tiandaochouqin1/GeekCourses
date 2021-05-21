@@ -1,0 +1,387 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                06讲拒绝重复，你一定要学会的多光标特性
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/74/70/74584e098ed1fd03f8d60b2291aa9870.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>从这个专栏的一开始，我就一直在强调快捷键的重要性，也一直在说你应该练就双手不离键盘这样的“神功”。学习一个编辑器的时候，我们在努力记住各种快捷键，其实目的就是希望能够减少日常工作中的重复劳动。前面两讲中我主要介绍了如何将常用的一些多步骤操作，简化为单个快捷键。</p>
+<p>但你知道，在我们的日常编码过程中，有很多工作，它本身就是具有“重复”属性的。比如你需要把多个单词的第一个字母从小写变成大写，这种跟业务逻辑相关的重复性操作，编辑器很难为它们一个个单独做优化。</p>
+<p>而 VS Code 的多光标特性其实就是用来解决这类问题的。当你在一个文本框或者某个输入框里打入字符时，会有一个竖线来显示你将要输入文字的位置，这就是“光标”。顾名思义，多光标其实就是多个输入位置，这里你可以脑补下多个竖线的场景。</p>
+<p>多光标特性允许你在输入框的多个位置创建光标，这样你就可以在多个不同的位置同时输入文字或者执行其他操作。是不是很酷？</p>
+<p>比如我上面提到的例子，你想把多个单词的第一个字母从小写变成大写。这个时候你只需要在每个单词的开头创建一个光标，然后按住 “shift + 右方向键” 选中这些单词的第一个字母，最后执行 “转换为大写” ，这样这些被选中的字符，就可以全部被转换成了大写了。</p><!-- [[[read_end]]] -->
+<p>那怎样才能创建多个光标呢？这其中又有什么规则？别急，且听我道来。</p>
+<h2>创建多个光标</h2>
+<p>我还是以一段 CSS 代码作为例子来介绍吧，如果你要练习，直接把这段代码复制到编辑器中即可。</p>
+<pre><code>.foo {
+  padding: 5;
+  margin: 5;
+  font-size: 5;
+}
+</code></pre>
+<p>你可以看到，在上面这段 CSS 代码中，所有属性的值都是“5”，但你可能觉得这样的写法不规范，想把它们都改成 “5px”。之前你肯定是吭哧吭哧挨个在5后面加“px”。而现在，有了多光标特性之后，你第一步要做的事情，就是把光标移动到第一个 “5”的前面。接下来就有两种操作方式可以选择。</p>
+<h3>1. 使用鼠标</h3>
+<p>第一种添加多光标的方式，就是使用鼠标。在键盘上按住 “Option”（Windows 上是 Alt），然后鼠标点在第二个“5”之前，那么第二个光标就创建好了。现在你可以看到两个光标，第二个光标比第一个要细一点。</p>
+<p><img src="https://static001.geekbang.org/resource/image/51/a5/5156a1d36a8f5d307054c37a0195afa5.png" alt="" /></p>
+<center><span class="reference">按住 “Option” 的同时，鼠标点在第二个 “5”之前创建第二个光标</span></center>
+<p>聪明的你肯定知道通过同样的方式来创建第三个光标。然后，按下右方向键，将光标们移动到 “5”的后面，输入“px”。这样，“5”后面就都已经加上“px”了，而这中间，你只做了一次输入。是不是很方便？</p>
+<p><img src="https://static001.geekbang.org/resource/image/6e/f1/6e457c792615747787352aa92e6ae8f1.gif" alt="" /></p>
+<center><span class="reference">按住 “Option” 创建三个光标，然后按下右方向键，最后输入 “px”</span></center>
+<h3>2. 使用键盘</h3>
+<p>第二种方式是使用键盘，但是比第一种方式要多两个步骤，我们来一起看看是为什么。</p>
+<p>首先你还是先移动光标到第一个“5”的前面。然后按下 “Cmd + Option + 下方向键”（Windows 上是 “Ctrl + Alt + 下方向键”），在当前光标的下面创建一个光标。</p>
+<p><img src="https://static001.geekbang.org/resource/image/7c/7d/7c062f1cd81cce2fcc17af62e0ab8e7d.png" alt="" /></p>
+<center><span class="reference">按住 “Cmd + Option + 下方向键” 在当前光标下创建新的光标</span></center>
+<p>相信你已经看出来了，第二个光标，由于就在第一个光标的正下方，所以它不在第二行的“5”前面。不过没关系，我们有办法搞定它。先别急，你还是如法炮制，把第三个光标创建好。</p>
+<p><img src="https://static001.geekbang.org/resource/image/79/9f/7938aeb10e2d18a5df73029232d7879f.png" alt="" /></p>
+<center><span class="reference">按住 “Cmd + Option + 下方向键” 连续创建两个光标</span></center>
+<p>下面你该尝试把光标移动到正确的位置啦。虽说现在三个光标的位置都是散乱的，没有什么规则，但你可以让它们移动到类似的位置：按下 “Cmd + 右方向键”（Windows 上是 End），这样它们就都移动到每一行的末尾了。</p>
+<p><img src="https://static001.geekbang.org/resource/image/35/96/353a6efd4d436f8eb24689188c638e96.png" alt="" /></p>
+<center><span class="reference">按住 “Cmd + 右方向键” ，光标全部移动到每一行的末尾</span></center>
+<p>到这里问题就简单了，你只需按下 “左方向键” 将光标移动到 <code>5</code>的后面，然后输入 <code>px</code>即可完成整个操作。</p>
+<p><img src="https://static001.geekbang.org/resource/image/7d/20/7dd1f9b493398f96a52796cc65be1b20.gif" alt="" /></p>
+<center><span class="reference">按住“左方向键” 移动所有光标到 5 后面，然后输入 ”px“</span></center>
+<p>对于这个样例而言，第一种方案比第二种要方便，但这两种方法解决问题的思路是一致的。前者通过鼠标操作，把光标移动到了你期望的位置，然后再执行别的操作；后者则是运用了 VS Code 内置的其他命令，把光标最终移动到你想要的位置。</p>
+<p>在第二种方案中，你是把光标全部移动到行末，从而统一了光标的位置，进而进行“重复性”的操作。但这个问题的解决方案不是唯一的，你也可以想一想，还有没有其他别的解法。</p>
+<p>在这里，我还是想重复下我之前说过的一个观点，<span class="orange">使用这样的功能的时候，你可以想想如果你是设计者，你会怎么样来设计多光标特性。闭着眼睛顺着这个路径思考，也许你会更容易理解和记住 VS Code 的模式。</span></p>
+<h2>创建多光标的两个特别命令</h2>
+<p>接下来，我再给你介绍两个关于多光标的创建的特别方法，如果你还没有消化上面的内容，也先别急，等把后面的全部看完之后再回去练习。</p>
+<h3>1. “Cmd + D”</h3>
+<p>首先讲第一种，还是上面的代码，你把光标移动到数字“5”之前，按下 “Cmd + D”，这样第一个“5”就被选中了；然后再按一次 “Cmd + D”（Windows 上是 Ctrl + D），你可以看到，第二个“5”也被选中了。</p>
+<p><img src="https://static001.geekbang.org/resource/image/43/79/4389104df43a09305e428e3f28f49879.gif" alt="" /></p>
+<center><span class="reference">按住 “Cmd + D” 选中第二个 5</span></center>
+<p><span class="orange">“Cmd + D” 这个命令的作用是，第一次按下时，它会选中光标附近的单词；第二次按下时，它会找到这个单词第二次出现的位置，创建一个新的光标，并且选中它。</span>这样只需要按下三次，你就选中了所有的“5”。这个时候你再按下 “右方向键”，输入“px”，即可完成任务。</p>
+<p><img src="https://static001.geekbang.org/resource/image/f9/dc/f9fad080c241bfdf6e42acc806c530dc.gif" alt="" /></p>
+<center><span class="reference">按住 “Cmd + D” 选中多个5，按下右方向键，输入“px”</span></center>
+<p>之所以说这个方法特别，是因为它的适用情况比较特别：处理多次出现的“相同”单词。如果你要处理的文本并不是相同的，那么这个方法就不适用了。</p>
+<h3>2. Option + Shift + i</h3>
+<p>接下来讲讲第二种，是跟代码行批量处理有关，也还是用的前面的代码。首先你选择多行代码，然后按下 “Option + Shift + i” （Windows 上是 Alt + Shift + i），这样操作的结果是：每一行的最后都会创建一个新的光标。</p>
+<p><img src="https://static001.geekbang.org/resource/image/81/18/813d810111731d90b366429757578018.gif" alt="" /></p>
+<center><span class="reference">按住 “Option + Shift + i” 在选择内容的每一行末尾添加一个光标</span></center>
+<p>同样的，这种方法是基于代码行的，如果你的需求是在同一行添加多个光标，那么就不适用了。</p>
+<p>就上面的例子，我个人第一反应是使用“Cmd + D”这种方式来处理。也许你会问，是不是学习一种方式就够了呢？毕竟这些方式也不那么容易记忆。我的回答也很简单，你应该都学，然后熟能生巧，融会贯通。我前段时间读《鞋狗》这本书，里面有一段论述相当精彩：</p>
+<blockquote>
+<p>在剑道中，只有在心中不再被我和你，不再被对手和他的剑，不再被自己的剑和使剑的方法所困扰时，才能达到最完美的状态……一切都是虚空：你自己、挥舞的剑和舞剑的胳膊，即便是空虚的想法都不再存在。</p>
+</blockquote>
+<p>舞剑、做企业是这样，我们写代码用编辑器何尝又不是这个道理呢？</p>
+<h2>小结</h2>
+<p>今天我们一起学习了在 VS Code 中如何使用多光标，以及如何利用多光标特性来减少重复劳动。但我这里也仅仅是抛砖引玉，如何把你手头看似杂乱无章的操作，变化成可以被灵活运用的“一组步骤”，也是一门学问。</p>
+<p>希望你能多思考、多琢磨、多练习，把多光标应用到你的日常工作中，避免重复，节约时间，从而更随心所欲地高效编程。</p>
+<hr />
+<p><img src="https://static001.geekbang.org/resource/image/92/06/92862660523add24b3168f22954fa506.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ce/ef/f5556442.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">南京韶邵不说话</span>
+                            </div>
+                            <div class="bd">cmd-k cmd-d 跳过当前的选择，这个也应该说一下吧 <br></div>
+                            <span class="time">2018-09-27 07:08</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content"></p>
+                                <p class="reply-time">2018-09-28 08:47</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/5e/90/5f79859b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Maiza</span>
+                            </div>
+                            <div class="bd">都学会拉 好赞！ 又可以省时间出来找测试小姐姐聊天拉  <br></div>
+                            <span class="time">2018-09-25 21:43</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">祝你成功</p>
+                                <p class="reply-time">2018-09-26 09:40</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c7/04/1e99fbc6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">JCODER</span>
+                            </div>
+                            <div class="bd">我的mac使用鼠标选择多光标需要按住cmd键，而不是option键，咋回事呢？ <br></div>
+                            <span class="time">2018-10-04 12:16</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你可以检查一下设置 editor.multiCursorModifier</p>
+                                <p class="reply-time">2018-10-09 09:43</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/64/d9/dfe43537.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username"></span>
+                            </div>
+                            <div class="bd">就一个alt而已吧，感觉鼠标适用场景更多 <br></div>
+                            <span class="time">2018-09-28 08:54</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/8f/c9/833d5060.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">玉皇大亮</span>
+                            </div>
+                            <div class="bd">vim 普通模式下，option + shift + i 不起作用呢，移动到代码块末尾后，按哪个键可以是插入模式呢？ <br></div>
+                            <span class="time">2018-09-27 12:00</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">Vim 插件会覆盖现有的编辑器快捷键，会影响 option shift I 的使用。</p>
+                                <p class="reply-time">2018-09-28 08:40</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ca/b7/5c451afd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">QS</span>
+                            </div>
+                            <div class="bd">Ctrl+D是向下选择相同的代码，然后就想Ctrl+U会不会是向上选择，结果发现是软撤消（笑哭.jpg） <br></div>
+                            <span class="time">2018-09-25 17:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/6d/9e/b8672895.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">崔文远-Troy Cui-上海浦东</span>
+                            </div>
+                            <div class="bd">Windows下的Ctrl+Alt+方向键会把整个屏幕反转 <br></div>
+                            <span class="time">2018-10-15 13:36</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/94/47/75875257.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虎虎</span>
+                            </div>
+                            <div class="bd">我以为刚开始读，结果就完了。完了。。。 <br></div>
+                            <span class="time">2018-09-29 09:24</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/cb/82/d01f40b4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">deiphi</span>
+                            </div>
+                            <div class="bd">我在 ThinkPad 上按  “Ctrl + Alt + 下方向键” 不能选择多光标，而是把整个屏幕上下翻转了，可能是跟系统热键有冲突。<br> <br></div>
+                            <span class="time">2018-09-27 21:37</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我推测也是这样，你先排查下</p>
+                                <p class="reply-time">2018-09-27 21:46</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/65/7f/5f759b5c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">明月几时有</span>
+                            </div>
+                            <div class="bd">我centos7表示有些键不一样 <br></div>
+                            <span class="time">2018-09-27 19:28</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是的，有些时候还是需要在快捷键编辑器里查看一下的</p>
+                                <p class="reply-time">2018-09-28 08:18</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7e/5b/35005438.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">甄心cherishm</span>
+                            </div>
+                            <div class="bd">5px的例子的键盘方案，如果5后面的内容比较长或者长度不同，是不是就不好用了 <br></div>
+                            <span class="time">2018-09-26 22:35</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/eb/f5/890a6f6e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">franklin</span>
+                            </div>
+                            <div class="bd">如果我安装了vim插件，ctrl+d是向下翻半页。如何更改多选快捷键ctrl+d为ctrl+n 使得通vim的multiple-cursors插件一致的快捷键呢？ <br></div>
+                            <span class="time">2018-09-26 22:17</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/58/93/e94b727f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">思考问题的熊</span>
+                            </div>
+                            <div class="bd"> 好奇怪，为什么我Windows里的鼠标多光标选择配合的是shift，并没有做过什么设置 <br></div>
+                            <span class="time">2018-09-26 18:38</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个确实很奇怪，你打开设置搜索 multi cursor modifier 看到的是啥</p>
+                                <p class="reply-time">2018-09-28 08:51</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c5/37/bb5465cf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">冰山北极熊</span>
+                            </div>
+                            <div class="bd">鞋狗的这段描述，不就是小说里，把所有招式都忘了，才能学会的太极拳吗 <br></div>
+                            <span class="time">2018-09-26 18:30</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/d1/01/c6487157.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">尘封</span>
+                            </div>
+                            <div class="bd">有什么快捷键是可以跳转到选中的方法 <br></div>
+                            <span class="time">2018-09-25 20:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c9/36/8e7aec6c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">刘荣清</span>
+                            </div>
+                            <div class="bd">多光标在搜索、常用正则方面有没有一些经验可以分享呢 <br></div>
+                            <span class="time">2018-09-25 15:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c8/d3/16b45d58.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">起名好难</span>
+                            </div>
+                            <div class="bd">那个5px的例子，为什么不直接在5后面添加光标？ <br></div>
+                            <span class="time">2018-09-25 07:39</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">可以的，放哪里都行。</p>
+                                <p class="reply-time">2018-09-25 11:12</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

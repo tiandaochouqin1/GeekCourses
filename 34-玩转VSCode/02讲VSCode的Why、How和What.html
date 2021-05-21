@@ -1,0 +1,266 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                02讲VSCode的Why、How和What
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/b0/9d/b0f1f587ba8154ed928482456e62af9d.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>从这一篇文章开始，我就要切入正题聊VS Code了，VS Code的全称是Visual Studio Code，但这全名实在是太长了，我和很多用户一样，喜欢叫它VS Code。说起VS Code，官方定义它是一个免费的、开源的跨平台编辑器。之所以强调“编辑器”，我想是因为 VS Code 并无意成为一个全尺寸的集成开发环境，也就是IDE。</p>
+<p>很多人都把编辑器等同于IDE，其实从专业角度来讲并非这样。IDE 更为关注开箱即用的编程体验、对代码往往有很好的智能理解，同时侧重于工程项目，为代码调试、测试、工作流等都有图形化界面的支持，因此相对笨重，Java程序员常用的Eclipse定位就是IDE；而编辑器则相对更轻量，侧重于文件或者文件夹，语言和工作流的支持更丰富和自由，VS Code 把自己定位在编辑器这个方向上，但又不完全局限于此。</p>
+<p>如果你有兴趣，可以打开自己喜欢的编辑器官网看看它是怎么样的定位。总体来说，近几年流行风向是轻量的编辑器，这也是大势所趋。</p>
+<p>要理解VS Code代码编辑器的设计思路，就需要先看看VS Code的发展轨迹。从我的角度看，不管你是学习编程语言，还是框架、编辑器，都应该先去看看它的来龙去脉，了解它们是怎么发展而来的，曾经遇到了什么问题，又是怎么解决的，这些信息都便于你从大局上提高对事情本质的认识。</p><!-- [[[read_end]]] -->
+<p>2011 年底，微软从 IBM 请来了 Erich Gamma。Erich Gamma 是《设计模式》一书的作者之一，曾和肯特·贝克（Kent Beck） 一起发明了 JUnit，并且在 IBM 领导 Java 开发工具的开发工作。微软把他请过来，就是希望他能够打造一款在线的开发工具，让开发者们能够在浏览器里获得 IDE 般的开发体验，这也就是之后为人所知的 Monaco Editor。</p>
+<p>Erich Gamma 见证了 Eclipse 从崛起到逐渐臃肿，再逐渐式微的整个历程，他深刻认识到 Eclipse 成功的一部分原因是极度的可定制化特性，任何功能在Eclipse中都可以用插件来实现；但是由于 Eclipse 的插件跟核心代码运行在同一个进程内，随着插件的增多，核心功能经常会被插件拖累，也就更加让人觉得笨重。</p>
+<p>因此，在打造 Monaco Editor 时，开发团队非常注重核心功能的性能，尽可能地保持轻量，而对资源和性能消耗较大的功能，则运行在其他的进程之中。</p>
+<p>2015 年，Erich Gamma 带领团队把 Monaco Editor 移植到桌面平台上，也就是这个专栏的主角 Visual Studio Code，即 VS Code。</p>
+<p>VS Code 继承了 Monaco Editor 的设计原则，其核心是做一个高性能的轻量级编辑器；个性化的功能，则交给插件系统来完成。这一点可以说是师承 Eclipse，但同时又吸取了 Eclipse 的教训，把插件系统运行在主进程之外，高度可定制但同时又是可控的。</p>
+<p>与此同时，VS Code 也有自己的使命，那就是让开发者在编辑器里拥有 IDE 那样的开发体验，比如对源代码有智能的理解、图形化的调试工具、版本管理等等。</p>
+<p>不难发现，VS Code 希望在编辑器和 IDE 之间找到一个平衡。在这样的设计思路下，你打开编辑器，不需要创建任何的项目工程文件就可以开始使用，并高效便捷地操作文本；同时在编程语言插件的支持下能够得到语法检查、智能提示；你还可以借助丰富的插件 API 拓展 VS Code 以满足自己的需求。</p>
+<p>要达成这样的目标，难度可以说是非常大的，但 VS Code 取得了不错的成果。究其原因，在我看来就是微软打造了一个开放的平台。虽然有“马后炮”的嫌疑，但让我们一起来看看这样的一个开放平台是怎么助力 VS Code 的吧。</p>
+<h2>开源与开放的平台</h2>
+<p><strong>首先，VS Code 的源代码以 MIT 协议开源</strong>。这不仅意味着大家能够免费获取到 VS Code 的核心代码，更意味着社区能够基于 VS Code 的代码，开发自己的产品。</p>
+<p>业界现在比较知名的基于 VS Code 的项目有 SourceGraph、StackBlitz、CodeSandbox 等，这些产品可以提供非常接近VS Code 的开发体验，而VS Code 也经常从它们身上吸取技术和产品层面的宝贵经验。</p>
+<p><strong>其次，开发过程和反馈渠道的开放</strong>。 VS Code 源代码托管在 GitHub 上，同时使用 GitHub 管理项目的开发计划和测试，每个用户都可以在 GitHub 上了解到 VS Code 的开发进度。与此同时，GitHub 也是 VS Code 唯一的反馈渠道，开发团队根据反馈的影响程度进行统筹安排。作为用户，你可以近乎实时地跟开发团队进行交流，了解产品的发展情况。</p>
+<p><strong>再次，接口的开放</strong>。VS Code 自带了 TypeScript 和 Node.js 的支持，用户下载 VS Code 后，立刻就能够在书写 JavaScript 和 TypeScript 时获得智能提示，而且无需任何配置即可立即调试 Node.js代码。VS Code 核心团队有 Node.js 高手，TypeScript 也是微软官方出品的，VS Code 能把对这两个语言的支持做好，似乎并不是什么值得惊讶的事情。但是 VS Code 团队不可能精通所有语言，对于他们不熟悉的语言，VS Code 该怎么支持呢？</p>
+<p>最好的办法莫过于<strong>把专业的事情交给专业的人来做</strong>。为此，VS Code 为编程语言工作者提供了统一的 API ，即Language Server Protocol 和 Code Debugging Protocol，每种语言都能够通过实现两个 API 在 VS Code 上得到类似 IDE 的开发和调试体验。</p>
+<p>而且 VS Code 也并没有因为 TypeScript 是微软嫡出就给开小灶，而是对大家都一视同仁，TypeScript 能够得到的支持，其他语言一个也不落下。比如 Rust 的语言支持，就是由 Rust 官方团队开发和维护的，他们可以说是这个世界上最懂怎么给 Rust 做语法支持的一群人了。</p>
+<p>在这样的平台上，编辑器开发者、编程语言工作者和社区，各自做自己最擅长的事情，把份内事做到极致。同时，从开发到测试，再到用户反馈都是公开透明的，每个人都能参与其中，把产品往自己希望的方向推进。VS Code 的技术实践和成果，最后也以开源的形式回馈给社区，让大家都能够借助 VS Code 去打造自己的产品，一起成功。</p>
+<h2>VS Code 学习指南</h2>
+<p>简短地了解了 VS Code 的历史后，如果你也认同它的设计哲学和使命，你肯定还想知道该如何把 VS Code 的这一套转化为自己的内力。我在第一讲 “学编辑器，到底应该‘学’什么？” 里讲过编辑器学习的通用办法，在 VS Code 身上也是适用的。你可以按照以下三个步骤来逐步掌握 VS Code。</p>
+<ol>
+<li>
+<p>核心编辑器的使用。VS Code 有一套自己的快捷键，你可以通过快捷键的学习了解核心编辑器所支持的功能。同时， VS Code 允许自定义快捷键的映射，如果你有自己熟悉的一套快捷键操作，也可以无缝地在 VS Code 上使用。除了快捷键，VS Code 对鼠标操作、多光标、搜索都有完备的支持；在编程语言的支持上面，VS Code 也向 IDE 看齐，自动补全、代码片段等一应俱全。掌握了核心编辑器，VS Code 就能够胜任你的日常通用编辑器。</p>
+</li>
+<li>
+<p>工作台、工作区的使用。VS Code 中除了编辑器区域，还有很多其他的功能，像是资源管理器、跨文件搜索、插件管理等，它们一起组成了统一的界面，我们称之为工作台。这个工作台的设计，代表了 VS Code 对工作流的选择。内置的软件版本管理，终端模拟器，调试器等，掌握这些 VS Code “钦定”的工具，进一步提升工作效率。</p>
+</li>
+<li>
+<p>VS Code 定制和插件开发。作为一个百万级别用户量的工具，很多功能的默认设置不可能满足每个人或者每个工作场景，你可以学习如何定制 VS Code 的各个部件，不能永远按部就班；对于 VS Code 没有实现的功能，还可以学习一下如何使用 JavaScript 书写插件，把自己的想法，变成工具的一部分。</p>
+</li>
+</ol>
+<p>通过这三个步骤，你在使用 VS Code 时就能够“随心所欲”了。除此之外，我也建议你关注 VS Code 每月的发布更新日志，官方团队会详细讲解每个版本新增的功能。VS Code 的官方博客也非常值得订阅，团队成员会经常分享开发过程的心得感悟，算得上是最前沿的技术分享。</p>
+<p>另外，我想你还会问我VS Code支持哪些编程语言，我这里就不列举了，你可以去官网看看，除了JavaScript，其实Java、Go、Python、PHP等后端编程语言也都在VS Code的考虑范围之内，并且我个人认为做得也足够专业。</p>
+<p>好了，关于VS Code的why、how和what就聊到这里，我再简单总结下：VS Code的定位是轻量级的代码编辑器，它综合了Eclipse等很多优秀开发工具的优势，同时，也解决了它们的痛点问题，在性能、语言支持、开源社区方面都做得不错，所以一经发布也就受到了社区的喜欢，如果你经常上Reddit，也能看到它经常霸占Reddit头条。</p>
+<p>其实我今天聊到的why、how和what也是一个经典的问题思考模型，外界称之为黄金圆环法则，如果你不知道，可以去谷歌查查，这里就不再赘述。</p>
+<p>留个思考题，你之前都用过哪些编辑器或者IDE呢？你理解它的why、how和what么？欢迎在留言区与我分享。</p>
+<h2>参考链接：</h2>
+<p><a href="https://code.visualstudio.com/blogs">戳此查看VS Code 官方博客</a></p>
+<p><a href="https://code.visualstudio.com/updates">戳此查看VS Code 更新日志</a></p>
+<p><a href="https://www.youtube.com/watch?v=uLrnQtAq5Ec">戳此查看Erich Gamma 在  Goto Conference 上对 VS Code 的介绍</a></p>
+<hr />
+<p><img src="https://static001.geekbang.org/resource/image/92/06/92862660523add24b3168f22954fa506.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/24/42/99e346c7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">谢小二</span>
+                            </div>
+                            <div class="bd">用clion写cpp服务端代码，基本上总不带调试功能，只是当编辑器用，感受就是太卡了，我i7，16g的电脑，经常都会转菊花，因此才来投奔vscode。但发现居然不支持查找所有引用 <br></div>
+                            <span class="time">2018-09-15 09:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/1e/a1/dc9388da.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">scott</span>
+                            </div>
+                            <div class="bd">emeditor，世界上最快的文本编辑器，快捷键与vs很接近，所以一用就喜欢了，甚至很多快捷键是他现有然后vs才有的。<br><br>他的宏可以用vbs或js写，无帮助就能自行上手。<br><br>正则也是用他学的，筛选功能很强大<br><br>现在他已经是我思维的一部分了。 <br></div>
+                            <span class="time">2018-09-15 09:11</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">赞 VSCode 还没有支持宏</p>
+                                <p class="reply-time">2018-09-18 11:08</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ae/e0/3e636955.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李博越</span>
+                            </div>
+                            <div class="bd">作为个Java程序员，今天试了下vsc，简直太难用了，各种编译问题都要配置，网上资料还不全，现在连个main都没跑起来 <br></div>
+                            <span class="time">2018-09-15 20:06</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">可以试试 https:&#47;&#47;github.com&#47;redhat-developer&#47;vscode-java&#47;</p>
+                                <p class="reply-time">2018-09-18 11:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/de/13/c355d4be.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">QVoid</span>
+                            </div>
+                            <div class="bd">说vscode不支持查找所有引用的那位，试试安装gtags <br></div>
+                            <span class="time">2018-09-18 18:32</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">赞</p>
+                                <p class="reply-time">2018-09-20 10:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/08/d4/abb7bfe3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">linhaixiaohuo</span>
+                            </div>
+                            <div class="bd">是否可以做一个快捷键功能及相关代码实现的福利视频。加深对快捷键的理解。我相信从代码中我们能够更好的吸收为什么开发者对快捷键设定的思考方式。 <br></div>
+                            <span class="time">2018-09-17 10:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/b3/a8/f74d604a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">鹏</span>
+                            </div>
+                            <div class="bd">正在研究vsc如何保存以后，自动上传文件到服务器。。 <br></div>
+                            <span class="time">2018-11-22 22:19</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/5a/e8/b46e1901.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">王相博</span>
+                            </div>
+                            <div class="bd">pyLint 是个什么。一直报错的用不了<br>a = input(&#39;hahha&#39;)  不知道味很  <br></div>
+                            <span class="time">2018-09-20 18:10</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/49/ef/39147375.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">曾祥荣</span>
+                            </div>
+                            <div class="bd">请问一下老师，在VS Code编辑文件后保存能直接标识这个文件已修改嘛（类似atom）？现在还得切到git栏目刷新一下，如果可以请问在哪设置？ <br></div>
+                            <span class="time">2018-09-17 22:30</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">默认情况下，在左侧资源管理里，能看到被修改的文件被高亮了</p>
+                                <p class="reply-time">2018-09-18 11:15</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/56/ea/a88d4a46.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Harry</span>
+                            </div>
+                            <div class="bd">今天算是正式了解了 VS Code 的历史。 <br></div>
+                            <span class="time">2018-09-17 12:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/ajNVdqHZLLA7LRG63vamnAAPaibCxGyT3yepLmobloOfMDPGibd5Rtcvq7pzE9NgCFXo8gZXYx1p44BcPlEr4ung/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">我叉巨魔</span>
+                            </div>
+                            <div class="bd">追剧 <br></div>
+                            <span class="time">2018-09-15 11:22</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

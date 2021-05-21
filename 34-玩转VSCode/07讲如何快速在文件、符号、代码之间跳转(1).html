@@ -1,0 +1,446 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                07讲如何快速在文件、符号、代码之间跳转
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/ff/2f/ff007c1b83586f9ac4c11da5c9224e2f.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>今天的内容，跟之前略有些不一样。在前面的几讲里，我们的侧重点一直是 VS Code 的“编辑器”特性。编辑器命令、快捷键、多光标，无一例外都是想要提高编辑文本的效率。</p>
+<p>但相信你还记得，在专栏的第二讲 “VS Code的Why、How 和What”里我提到过，VS Code 是想在传统编辑器和 IDE 之间找到一个平衡点，让你在编辑器上也一样能体验到 IDE 那些出色的语言支持。</p>
+<p>今天，我们就会一起探讨， VS Code 是如何借力于编程语言支持，让代码的跳转更智能的。</p>
+<h2>文件跳转</h2>
+<p>当你在开发一个新功能或者修复一个 Bug的时候，你同时在阅读和修改的文件可能就有几个或者十几个。从资源管理器里打开文件固然方便，但是如果这个项目里的文件非常多，并且经常需要在资源管理器里寻找文件，那“眼花缭乱”的，肯定要浪费你不少宝贵的时间。</p>
+<p>在VS Code中，解决这个问题的第一个方法，就是按下 “Ctrl+Tab”，然后继续按着 “Ctrl”键但是松开 “Tab” 键，这样你就可以打开一个文件列表，这个列表罗列了当前打开的所有文件。接下来，你可以通过按下 “Tab”键在这个列表里跳转，选择你想要打开的文件。最后选到你想打开的文件后，松开 “Ctrl” 键，这个文件就被打开了。</p><!-- [[[read_end]]] -->
+<p><img src="https://static001.geekbang.org/resource/image/13/c0/135452ab16d649129306669ae9c09ec0.gif" alt="" /></p>
+<center><span class="reference">通过“Ctrl+Tab”组合键选择并打开文件</span></center>
+<p>不过，使用这个方式切换文件，最大的问题在于，文件一旦多了，你就得不停地按 “Tab” 键，没完没了地上下跳转和挑选，这会是一个恼人的耗费时间和眼力的操作。</p>
+<p>还好，VS Code 在命令面板里提供了一种支持搜索的文件跳转方式。当你按下 “Cmd + P” （Windows 上是 Ctrl + P）时，就会跳出一个最近打开文件的列表，同时在列表的顶部还有一个搜索框。</p>
+<p>看到这里想必你应该明白了，你可以使用这个搜索框来快速地找到你想要的文件，然后按下 “Enter” 键直接打开，这整个过程简单而且顺畅。</p>
+<p><img src="https://static001.geekbang.org/resource/image/ed/a4/ed870d294a2da536656bd4fb4ec241a4.gif" alt="" /></p>
+<center><span class="reference">按下“Cmd + P”打开最近打开的文件列表</span></center>
+<p>在这里，我再分享给你一个小技巧，当你找到目标文件后，可以按下 “Cmd + Enter ” （Windows 上是 Ctrl + Enter）组合键。你会发现与上面不一样的是，这个文件在一个新的编辑器窗口中打开了（关于编辑器窗口的管理，我会在之后的章节里介绍）。</p>
+<p><img src="https://static001.geekbang.org/resource/image/47/0e/478ac5dd27b5f499db7a1b94d077390e.gif" alt="" /></p>
+<center><span class="reference">按下 “Cmd + Enter ”组合键在新窗口中打开文件</span></center>
+<h2>行跳转</h2>
+<p>打开某一个文件之后，你的另外一个需求可能就是要快速跳转到这个文件的某一行。你可能会想，VS Code是不是可以像Vim那样，输入“:13”就能跳转到第13行。是的，VS Code也提供了一种极为简单的方式来支持行跳转，你只需要按下 “Ctrl + g”，紧接着编辑器就会出现一个输入框。如下图所示：</p>
+<p><img src="https://static001.geekbang.org/resource/image/46/52/4645749b2c9a97f3b1a1a5cfce4bf952.png" alt="" /></p>
+<center><span class="reference">按下 “Ctrl + g”，调出行输入框</span></center>
+<p>你会惊喜地发现，这个输入框的第一个字符就是 “:”，在这之后输入数字，你就能够将光标快速地移动到那一行。是不是很便捷？</p>
+<p><img src="https://static001.geekbang.org/resource/image/56/03/56e392600a471dd490996b87eb4ab903.gif" alt="" /></p>
+<center><span class="reference">输入行数3，跳转到第3行</span></center>
+<p>接下来我再给你介绍一个高阶组合技巧。如果你想跳转到某个文件的某一行，你只需要先按下 “Cmd + P”，输入文件名，然后在这之后加上 “:”和指定行号即可。</p>
+<p><img src="https://static001.geekbang.org/resource/image/aa/ef/aab2459120a08a11c1ace71d88920def.gif" alt="" /></p>
+<center><span class="reference">跳转到指定文件的指定行数</span></center>
+<h2>符号 (Symbols) 跳转</h2>
+<p>文件跳转和行跳转，是代码跳转的基本操作，也是日常编码中的高频操作。不过有的时候，你可能会希望能够立刻跳转到文件里的类定义，或者函数定义的位置。为了支持这种跳转，VS Code 提供了一套 API 给语言服务插件，它们可以分析代码，告诉 VS Code 项目或者文件里有哪些类、哪些函数或者标识符（我们把这些统称为符号）。</p>
+<p>如果要在一个文件里的符号之间跳转，你只需按下 “Cmd + Shift + O” （Windows 上是 Ctrl + Shift + O），就能够看到当前文件里的所有符号。</p>
+<p><img src="https://static001.geekbang.org/resource/image/8b/ee/8b660cb543f738464b9d532bc93ce1ee.png" alt="" /></p>
+<center><span class="reference">使用 “Cmd + Shift + O”组合键，调出当前文件的符号</span></center>
+<p>使用方向键，或者搜索，找到你想要的符号后，按下回车，就能够立刻跳转到那个符号的位置。如下图所示：</p>
+<p><img src="https://static001.geekbang.org/resource/image/37/7c/37ea953edce0e8d65c332498889f277c.gif" alt="" /></p>
+<center><span class="reference">通过符号功能跳转到指定的代码位置</span></center>
+<p>请注意，在按下 “Cmd + Shift +O”后，输入框里有一个 “@”符号，这个符号在这里的意义，我会在后面的章节里去介绍，你可以先留个心眼。这时，如果你输入 “:”，就可以将当前文件的所有符号，进行分类，这样搜索符号也就更加方便。</p>
+<p><img src="https://static001.geekbang.org/resource/image/b8/0a/b8fa3a1964c19240055464e932e9770a.gif" alt="" /></p>
+<center><span class="reference">对当前文件的所有符号进行分类</span></center>
+<p>有些语言除了提供单个文件里的符号，还支持在多个文件里进行符号跳转。比如在 VS Code 里，如果你打开了多个 JavaScript 文件，就可以按下 “Cmd + T” （Windows 上是 Ctrl + T），搜索这些文件里的符号。</p>
+<p><img src="https://static001.geekbang.org/resource/image/37/7c/37ea953edce0e8d65c332498889f277c.gif" alt="" /></p>
+<center><span class="reference">通过“Cmd + T”，搜索多个文件的符号</span></center>
+<h2>定义 (Definition) 和实现 (implementation) 跳转</h2>
+<p>符号跳转依托于语言插件对代码的分析，已经算得上具备一定的智能特性，但是它还是不够精确。比如说我们看到某个函数的调用，想要知道这个函数的接口定义是什么样的，它的实现细节是什么样的，光靠符号跳转，还是会不方便。我们需要的是直接跳转到定义和实现的位置，Java程序员看到这里一定会深有感触。</p>
+<p>当然，这个功能也需要语言本身的支持。比如说当你在使用 TypeScript 时，按下 F12，就可以跳转到函数的定义处。</p>
+<p><img src="https://static001.geekbang.org/resource/image/d7/6c/d70a71dd28076beb4808e97c87a31e6c.gif" alt="" /></p>
+<center><span class="reference">F12跳转到函数定义的位置</span></center>
+<p>也可以按下 “Cmd + F12” （Windows 上是 Ctrl + F12），跳转到函数的实现的位置。</p>
+<p><img src="https://static001.geekbang.org/resource/image/ee/66/ee4275a06d3d2798d2b0791cd2b87666.gif" alt="" /></p>
+<center><span class="reference">Cmd + F12 跳转到函数实现的位置</span></center>
+<p>而在书写 JavaScript 时，因为并没有接口（interface）的概念，定义和实现恰好是相同的。</p>
+<p><img src="https://static001.geekbang.org/resource/image/6a/af/6aea242b4365ea661ad6a1203ff099af.gif" alt="" /></p>
+<center><span class="reference">JavaScript 里 F12 和 Cmd + F12 效果一样</span></center>
+<h2>引用 (Reference) 跳转</h2>
+<p>很多时候，除了要知道一个函数或者类的定义和实现以外，你可能还希望知道它们被谁引用了，以及在哪里被引用了。这时你只需要将光标移动到函数或者类上面，然后按下 “Shift + F12”，VS Code 就会打开一个引用列表和一个内嵌的编辑器。在这个引用列表里，你选中某个引用，VS Code 就会把这个引用附近的代码展示在这个内嵌的编辑器里。</p>
+<p><img src="https://static001.geekbang.org/resource/image/e7/60/e70b08ff60175c3a58823a9ee090c960.gif" alt="" /></p>
+<center><span class="reference">Shift+ F12打开函数引用预览</span></center>
+<h2>小结</h2>
+<p>今天我介绍了如何在文件之间跳转，如何跳转到某个文件的某行代码，以及如何在编程语言插件的帮助下，跳转到符号、定义、实现和引用的位置。对这些命令和快捷键熟练掌握后，你就不用像“无头苍蝇”一样在编辑器里找代码了。</p>
+<p>不过这并不是VS Code里代码跳转功能的全部，在之后的学习过程中，我还会给你展示更多的快捷方式，所以尽情感受你灵活的双手随心所欲地在代码之间跳转吧。</p>
+<hr />
+<p><img src="https://static001.geekbang.org/resource/image/92/06/92862660523add24b3168f22954fa506.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ce/ef/f5556442.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">南京韶邵不说话</span>
+                            </div>
+                            <div class="bd">只有vscode自身的功能，并不能好好工作，比如我们在webpack里面配置了路径别名，vscode就找不到定义了，这时候需要配合jsconfig来处理路径，让vscode可以正确识别别名。既然收了钱，应该讲深一点啊 <br></div>
+                            <span class="time">2018-09-27 07:14</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">在介绍跳转功能的文章里，我觉得不必特地介绍某个编程语言或者框架的使用。你提的这个是个好问题，我会在后面的语言相关的文章里涉及。</p>
+                                <p class="reply-time">2018-09-28 08:23</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/bd/ec/cc7abf0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">L</span>
+                            </div>
+                            <div class="bd">刚刚试了一下那个shift+F12的查找索引。发现只能查找到当前文件的引用。如果这个函数被export出去了就查不到了，这个是vscode的原因还是因为JS？如果换成TS就可以查到了吗？ <br></div>
+                            <span class="time">2018-09-27 10:22</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">如果你说的问题是，在一个 js 文件里 export 了一个函数，在另外一个文件里引用了它但是 shift + F12 找不到，那么可以在这个项目下添加一个 jsconfig.json 文件，这个文件会让 VSCode 知道，当前这个文件夹下的文件都是属于同一个项目的，从而进行索引。jsconfig.json 这个文件的一个例子 <br><br>{<br>    &quot;compilerOptions&quot;: {<br>        &quot;target&quot;: &quot;ES6&quot;<br>    },<br>    &quot;exclude&quot;: [<br>        &quot;node_modules&quot;,<br>        &quot;**&#47;node_modules&#47;*&quot;<br>    ]<br>}<br><br>你也可以参考 https:&#47;&#47;code.visualstudio.com&#47;Docs&#47;languages&#47;javascript#_javascript-projects-jsconfigjson 来修改 jsconfig</p>
+                                <p class="reply-time">2018-09-28 08:38</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Geek_7070af</span>
+                            </div>
+                            <div class="bd">F1-F12 快捷键在MacBook touch bar 下面都很难用。默认不是显示的，还要压着fn 键。如果还要shift，cmd 那么手指组合别扭，还需要两个手。虽然一定可以配置，但就没了开箱即用的良好体验。喜欢intellij的 无论定义还是引用都只需要 cmd 加 click。凭空少了一次废操作。 <br></div>
+                            <span class="time">2018-09-27 07:18</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">所以我特别不想换最新的 MacBook ，不得不换了会搭配外接键盘使用</p>
+                                <p class="reply-time">2018-09-28 08:52</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c4/14/3b6dabf7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">MirGhojam</span>
+                            </div>
+                            <div class="bd">哈哈，这么多功能没用，只用cmd+f挨个搜索单词 <br></div>
+                            <span class="time">2018-09-27 02:51</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/71/82/62ebb428.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username"> </span>
+                            </div>
+                            <div class="bd">TouchBar 上显示F1--F12 方法.   系统便好设置-键盘-快捷键-Fn功能键，右边添加应用。凡是添加了的，都默认显示f1-f12. 我为开发工具都设置了该功能, 为啥还要为这个发愁呢.  如果觉得虚拟键Fn 不好用. 那就没办法了.  <br></div>
+                            <span class="time">2018-09-29 11:02</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/bf/bd/20f6d724.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">wustzjf</span>
+                            </div>
+                            <div class="bd">为啥我按shift + F12 一点反应也没… <br></div>
+                            <span class="time">2018-09-29 09:41</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是跟文中同样的代码吗</p>
+                                <p class="reply-time">2018-10-01 02:32</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/90/54/21795a71.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">gggwvg</span>
+                            </div>
+                            <div class="bd">项目大了之后，查找全局符号或者查找函数引用速度非常非常慢，是没有缓存？每次重新index函数或符号吗？ <br></div>
+                            <span class="time">2018-09-27 15:35</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是的，现在 VSCode 的实现并没有做缓存</p>
+                                <p class="reply-time">2018-09-28 08:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c5/37/bb5465cf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">冰山北极熊</span>
+                            </div>
+                            <div class="bd">老师，我用的是python3 ，我自己定义了一个函数后，在另外一个文件引用该函数，按F12，无法跳转到该定义函数，这是为什么呢 <br></div>
+                            <span class="time">2018-09-27 13:39</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">默认的 Python 支持没有添加 Intellisense ，你可以安装 Python 插件 https:&#47;&#47;marketplace.visualstudio.com&#47;items?itemName=ms-python.python</p>
+                                <p class="reply-time">2018-09-28 08:42</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/57/4f/6fb51ff1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">一步</span>
+                            </div>
+                            <div class="bd">那个文件符号跳转列表，是不是就是大纲里面的列表？ <br></div>
+                            <span class="time">2018-09-27 10:20</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">没错</p>
+                                <p class="reply-time">2018-09-28 08:17</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/b3/26/cc28a05a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">悬炫</span>
+                            </div>
+                            <div class="bd">很好奇我们在webpack里面配置了路径别名，vscode就找不到定义了，这时候如何解决，jsconfig该怎么配置 <br></div>
+                            <span class="time">2018-09-27 09:27</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">一个简单的例子 <br><br>```<br>{<br>  &quot;compilerOptions&quot;: {<br>    &quot;baseUrl&quot;: &quot;.&quot;,<br>    &quot;paths&quot;: {<br>      &quot;ClientApp&#47;*&quot;: [&quot;.&#47;ClientApp&#47;*&quot;]<br>    }<br>  }<br>}<br>```</p>
+                                <p class="reply-time">2018-09-28 08:29</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ae/3c/bfca4b6c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">胡达</span>
+                            </div>
+                            <div class="bd">C++好像用不了 查找所有引用（Shift+F12） <br></div>
+                            <span class="time">2018-11-17 11:17</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/e3/ed/3cf2344b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小王做IT</span>
+                            </div>
+                            <div class="bd">建议汇总个表把这么多快捷键总结一下. <br></div>
+                            <span class="time">2018-10-22 00:02</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c9/24/a9126ecb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Cherry</span>
+                            </div>
+                            <div class="bd">老师，我的VSCODE 出事啦！笔掉在键盘上，代码里面突然空格被加重显示了，特别扭 ， 找了半天没找到快捷键，老师知道吗？ <br></div>
+                            <span class="time">2018-10-09 15:05</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你这只笔比较厉害 可以修改 editor.renderWhitespace</p>
+                                <p class="reply-time">2018-10-10 10:16</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/7e/97/746261a8.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Cody Yang</span>
+                            </div>
+                            <div class="bd">提一个小建议：在书写快捷键的时候最好注意一下大小写 <br></div>
+                            <span class="time">2018-10-07 12:37</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">没问题，谢谢提醒</p>
+                                <p class="reply-time">2018-10-09 08:59</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/bf/bd/20f6d724.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">wustzjf</span>
+                            </div>
+                            <div class="bd">写示例代码 按shift + f12 可以显示引用，不过我得是c语言代码，就没有反应，有什么办法么 <br></div>
+                            <span class="time">2018-10-04 20:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/94/47/75875257.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虎虎</span>
+                            </div>
+                            <div class="bd">有没有跳转到上次编辑的位置，上次光标的位置，这两项功能呢？比如跟踪代码之后，我想回到调用的最初位置该怎么操作。 <br></div>
+                            <span class="time">2018-10-02 21:17</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/bd/ec/cc7abf0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">L</span>
+                            </div>
+                            <div class="bd">怎么在键盘上撤销多光标操作呢？有的时候使用了cmd+d来选中了很多的词进行一次操作以后，又要切换回鼠标点一下把所有光标变成一个 <br></div>
+                            <span class="time">2018-09-29 10:47</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个忘了介绍了，按 Escape 键即可</p>
+                                <p class="reply-time">2018-10-01 02:31</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/bd/ec/cc7abf0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">L</span>
+                            </div>
+                            <div class="bd">再补充一个吧，如果使用了commond+p 来打开一个文件，有的时候回想在一个新的tab页面来打开而不是一个新的窗口，其实这个时候可以使用方向键而不是entry键来打开。<br>不过突然觉得实际上只需要开一个窗口就好了 <br></div>
+                            <span class="time">2018-09-29 09:53</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不错 这个我偶尔用，更多时候还是放在一个 tab 里</p>
+                                <p class="reply-time">2018-10-01 02:32</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7c/b3/40e8fa1d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">风的叹息</span>
+                            </div>
+                            <div class="bd">vs code对于go的开发环境搭建，vendor目录的索引如何解决呢？希望多一些怎么查找解决方案的思路和方法，感谢！ <br></div>
+                            <span class="time">2018-09-28 11:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">felix</span>
+                            </div>
+                            <div class="bd">有个问题typescript。假如我在channel类中new一个user类，因为没有import所以会标红，黄色的解决提示我总是不知道如何才能让它确定出现，有什么快捷键可以手动找到import？就是手动出黄色的解决问题提示的快捷键？谢谢 <br></div>
+                            <span class="time">2018-09-28 09:46</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">当光标在这个错误上时，你可以命令面包找到快速修复 Quick Fix，或者按下 cmd + .</p>
+                                <p class="reply-time">2018-10-01 02:35</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                开篇词讲玩转编辑器，向高效能编程再进一步
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/46/84/4664e7f29ac02da1d451f23986ff9f84.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是吕鹏。今天我来和你聊聊代码编辑器与高效能编程的故事。</p>
+<p>代码编辑器的选择，可以说是开发者社区中一个经久不衰的话题，我也深受其扰。刚学会了怎么从 Vim 里退出来，就了解到 Emacs 居然可以煮咖啡；好不容易省下半个月口粮买了 Sublime Text，突然间发现大家却都开始用 Atom 了……</p>
+<p>当然，上面我说的编辑器切换速度有些夸张，甚至有点像女生选购包包的过程，反正我老婆是这样，看到这个喜欢那个，看到那个又喜欢这个。但换个角度来看，开发工具的选择可以让程序员心花怒放，也能侧面说明他们对于开发的重要程度。编辑器的使命是提升效率，但由于时代背景和设计哲学的不同，不同工具的侧重点也千差万别。是 “专注做一件事儿并做到最好”，还是提供高度可扩展性？抑或是为初级用户提供“开箱即用”的体验？不同的选择最终导致了不同的产品形态。</p>
+<p>对于像你我一样的开发者而言，如何挑选适合自己的编辑器这件事也开始变得让人头疼，就和前面举的女生狂街选包包的例子一样，没有一件是最合适的，但又好像每一件都还不错。同样，编辑器也一样，每个开发者都有不同的开发习惯和需求，幻想“<strong>One editor to rule them all</strong>”也极是不现实的，找到自己的最爱就好。</p><!-- [[[read_end]]] -->
+<p>前段时间微软宣布收购 GitHub，消息立刻在 Atom 用户间炸开了锅。要知道，微软已经拥有号称“宇宙第一集成开发工具”的 Visual Studio 和新晋跨平台编辑器 Visual Studio Code，这一收购让 Atom 的前景变得扑朔迷离。不过很快 GitHub 下任 CEO Nat Friedman 给出了一个极其精彩的回答：</p>
+<blockquote>
+<p>Developers are really particular about their setup, and choosing an editor is one of the most personal decisions a developer makes. Languages change, jobs change, you often get a new computer or upgrade your OS, but you usually pick an editor and grow with it for years. The last thing I would want to do is take that decision away from Atom users.</p>
+</blockquote>
+<p>上面是英文，我简单翻译下：</p>
+<blockquote>
+<p>开发者极其在乎他们的开发环境，选择一款适合自己的开发工具也是非常个性化的决定。你使用的编程语言可能会变，工作会换，电脑会换，操作系统会换，但是一旦选择了一款开发工具，你可能很多年都会坚持使用它。所以只要 Atom 的社区还在，我们就会坚持把它开发下去。</p>
+</blockquote>
+<p>这个例子恰好说明，你不停地折腾手中的开发工具，并不意味着你“喜新厌旧”，更不是说你“闲着没事”，不断追求更适合自己的工具是整个开发者社区的共同特征，也是他们编程的乐趣之一。</p>
+<p>从我学习写代码开始，使用过的开发工具不下十余种。最开始学 C++，我用的是学校机器上的 Visual C++ 6.0，对于一个编程小白来说，它几乎意味着软件开发的全部。后来看到有同学在使用 Code Blocks，我才意识到编程语言和开发工具原来是两个不同层面的事情。</p>
+<p>大二的时候上操作系统课，老师规定我们必须在 Minix （一种微内核架构的类 Unix 操作系统）上进行开发，没有了图形界面，我不得不硬着头皮学习了 Vi。Vi 和它的继任者 Vim 被不少人称为“编辑器之神”，但刚接触的时候，我对着键盘完全无从下手，既不知道如何输入代码也不知道怎么退出 Vi。</p>
+<p>然而，在经过一个礼拜的适应期后，我被它“拒绝重复”的理念折服了。虽然课程压力大经常赶 deadline，但我不断地尝试如何让自己再快一点，完成一个操作如何再少一些按键。这是我第一次对开发工具产生了“信仰”，我的手指肌肉可能这辈子都没办法忘掉 Vim 的那些操作了。</p>
+<p>我第二次被开发工具刷新世界观，是在 Mac 上看到 TextMate。TextMate 有着细腻的图形化界面，性能也非常不错，完全没有 IDE 的笨重感，对主流编程语言都有很好的语法高亮支持。那时候看Rails 作者 DHH 在视频里用 TextMate 写 Ruby ，我都惊呆了，原来无论是操作系统、编程语言还是开发工具，都可以这么性感。</p>
+<p>这之后，每每有新的开发工具出现，我都会安装了把玩把玩。他们中有些让人眼前一亮，比如 Sublime Text 重写的第二版，Visual Studio 2013 和它比较成熟的深色主题。有些则让人有点摸不着头脑，没有留下深刻的印象。</p>
+<p>最近几年随着前端和 JavaScript 社区的蓬勃发展，开始出现不少基于浏览器引擎进行二次开发的有趣尝试。我最先使用的是 Adobe 的 Brackets，它是基于 Chromium 浏览器嵌入式框架 CEF 开发的。Brackets 在 HTML、JavaScript、CSS 这三门语言的支持上可以称得上完美，不过刚开始它的性能实在是太差了，动不动就卡死。</p>
+<p>再之后的故事相信你就比较熟悉了，GitHub 和微软相继推出了基于 Electron 的开发工具 Atom 和 Visual Studio Code，前端社区已经火到不行了，扩展和定制 Atom 或者 VS Code 的难度都大大降低，很快便收获了一众拥趸。</p>
+<p>到这里你可能会问，吕鹏你讲了这么多开发工具，到底哪个最好呢？很抱歉，我没法给出答案。</p>
+<p>就像我在最开始提到的，开发工具的选择是一个非常私人的事情，不同工具的侧重点也不同，所以你不是要找绝对最好的，而是要找一个当下最适合自己，能够最大程度发挥自己开发热情和效率的那一个。</p>
+<p>从我的角度，在选择编辑器时，需要考虑以下三个因素。</p>
+<p><strong>第一，你对文本、代码的编辑效率要求有多高</strong>？比如说，在Vim里面你可以通过快捷键快速删掉一行或者某些单词，如果你喜欢这样的功能，那在选择编辑器的时候就要考虑它是否支持这样的特性了。</p>
+<p><strong>第二，这个编辑器对编程语言的支持如何，配置是否繁琐</strong>？比如你用Java，所以选择编辑器前，先要去官网查查官方是否重点支持这门编程语言，相关的配置之类的东西是不是繁琐。如果官方都不支持，那你可能就会吃力不讨好了。</p>
+<p><strong>第三，它的插件生态怎么样，能否满足我的需求</strong>？对于大部分编辑器来说，插件对于已有的编辑器功能来说，都是一个很好的互补，你也会大概率使用到插件的功能。所以使用之前，你要看看它的插件生态是否繁荣，能否支持你的基础需求。如果整个插件社区比较冷清，那你可要慎重…</p>
+<p>相信你问完自己这三个问题，你心里已经有了一杆秤。<strong>只有对它有足够的了解，你才知道它是不是适合你，你也才能像杨过一样把“剑”舞得炉火纯青，出神入化</strong>。</p>
+<p>好了，以上就是我对编辑器的认知，你可能感觉我夸大了工具在软件开发过程中的重要性，但就我个人的经验而言，如果你不能熟练使用代码编辑器，那就可能在工作中浪费很多时间。再进一步说，作为程序员，你每天都在与代码编辑器打交道，但是你却不能完全驾驭你最应该熟悉的东西，不觉得奇怪吗？</p>
+<p>你不妨回想一下，当你连续工作了数小时来研究一个问题，大脑运转速度开始放缓，你在操作编辑器、编写代码或者调试的时候，是不是越来越依赖于直觉和肌肉记忆？当你们产品线上出现问题，需要火速修复和发布的时候，你是不是每一个操作都非常谨慎地选择自己最熟悉的方式，哪怕它不是最高效的那个？细细深究下去，相信我们可以找到非常多的例子，我们因为这样或那样的原因，不知不觉多了一些重复劳动。</p>
+<p>我们都说程序员是最懒的一群人，他们致力于减少任何重复性劳动。一个更高效的快捷方式或者工作流，可能一次只能帮你省下几秒钟，相对于你在思考解决方案上花的时间而言可能完全不值一提。但如果把省下的时间累加起来，能够让你每天多休息二十分钟，一年下来就是几十个小时，算到这里，我想你应该明白我的意思了。</p>
+<p>再回过来说编辑器的选择，如果这个时间点，你让我推荐一款我最喜欢的编辑器。我肯定毫不犹豫地和你说VS Code。<strong>VS Code是一款免费的、开源的、高性能的、跨平台的、轻量级的代码编辑器</strong>。它综合了Eclipse等很多优秀编辑器的优势，同时，也解决了它们的痛点问题，在性能、语言支持、开源社区方面都做得不错。</p>
+<p><img src="https://static001.geekbang.org/resource/image/3d/4d/3db377b4d31768f5885efa4d79ecf04d.png" alt="" /></p>
+<p><strong>恰好，这个专栏的主体就是VS Code。作为VS Code团队的开发者，我写这个专栏的意义就是希望能够带你全面了解 VS Code，以及帮助你在日常工作中更好地运用它，以便提升工作效率。</strong></p>
+<p>我刚加入 VS Code 项目组的时候，使用了很长时间的 Vim 插件，因为我很熟悉那一套操作方式。但由于我在 VS Code 这个产品上负责的部分刚好就是编辑器，如果我都不使用自己做的功能，好像也说不过去。于是我索性卸载了 Vim 插件，开始吃自己的“狗粮”。</p>
+<p>刚开始总有一些水土不服，跟同事结对编程的时候，我甚至会像个刚学代码的学生一样手足无措。但也正是这段充当自己产品用户的经历，让我意识到，你可能同样需要一个除了官方文档之外，相对系统了解 VS Code 的途径，毕竟少走弯路也是在省时间。</p>
+<p>择日不如撞日，我想既然你已经看到这里，那也应该已经订阅了专栏。在这里，我先欢迎你的加入。让我们就从今天开始，一起“结对编程”，共同探索VS Code的高效使用之道。作为VS Code的开发者，我更是希望通过这门课程，能帮助你熟练掌握代码编辑器的“精髓”，更能彻底爱上VS Code。</p>
+<p>我们这个专栏的终局是<strong>双手不离键盘，从容随性Coding</strong>，你准备好了么？接下来，让我给你先布置一些预习作业：</p>
+<p>如果你还没有下载VS Code，那请先到官网自行<a href="https://code.visualstudio.com">安装VS Code</a>，安装完成之后，可以简单写几行代码，看看菜单之类的基础功能。同时，还请仔细浏览下官网，对照我前面讲的编辑器选择三要素，思考下VS Code到底哪里做的还不错，哪里做的不如其他编辑器。</p>
+<p>如果你已经是VS Code的用户，那你同样也需要浏览下官网，看看用了这么久，你是否已经体会到VS Code的精髓。同时，也请你在评论里列出来目前你在使用过程中的一些感受，以及一些迷惑的点。在未来的这些日子里，我将会一一帮你解答。</p>
+<hr />
+<p><img src="https://static001.geekbang.org/resource/image/92/06/92862660523add24b3168f22954fa506.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/60/a9/66d90640.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">sonong</span>
+                            </div>
+                            <div class="bd">VScode能不能记忆插件，经常换电脑，都得重新安装插件，类似有个插件管理器的功能存在云端 <br></div>
+                            <span class="time">2018-09-11 08:09</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个需求很合理，用户投票数也挺高的 https:&#47;&#47;github.com&#47;Microsoft&#47;vscode&#47;issues&#47;8102 咱们看看它有没有机会下个 Roadmap。</p>
+                                <p class="reply-time">2018-09-11 11:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/af/6f/90c51bc0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Karnaugh卡诺</span>
+                            </div>
+                            <div class="bd">排第一个那个问题，试一试这个插件？<br>https:&#47;&#47;github.com&#47;nonoroazoro&#47;vscode-syncing<br>Syncing 是一个 VSCode 扩展，它能在多台设备之间同步你的所有 VSCode 配置（借助了你的 GitHub Gist）。 <br></div>
+                            <span class="time">2018-09-13 23:40</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/59/0e/09e2cf5d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">leslieeilsel</span>
+                            </div>
+                            <div class="bd">网易云音乐-代码时间-第36期，哈哈，熟悉的声音 <br></div>
+                            <span class="time">2018-09-10 22:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c6/62/3f1be4ff.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">HunterSNK</span>
+                            </div>
+                            <div class="bd">省下半个月口粮买了 sublime text ，这不就是说的我嘛！... <br></div>
+                            <span class="time">2018-09-11 11:59</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/4e/f9/b12388bd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">weilai</span>
+                            </div>
+                            <div class="bd">可以讲下C&#47;C++在这个编辑器下的开发，以及kernel的源码阅读<br> <br></div>
+                            <span class="time">2018-09-12 00:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">fritz</span>
+                            </div>
+                            <div class="bd">vscode插件和设置都可以通过 setting-sync 进行云同步和记录哦 <br></div>
+                            <span class="time">2018-09-14 10:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/9e/30/732ec6ce.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">CHENG</span>
+                            </div>
+                            <div class="bd">用过 Settings Sync 这个插件，可以把设置同步到自己的gist，傻瓜式操作还挺好使。 <br></div>
+                            <span class="time">2018-09-12 04:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/f1/31/5001390b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Lonely绿豆蛙</span>
+                            </div>
+                            <div class="bd">虽然还没毕业，编程已有七年。VSCode是第一款欲罢不能的编辑器，甚至每次的change log都认真读过。看到专栏立刻就订了，也许毕业后去应聘也有可能哟~ <br></div>
+                            <span class="time">2018-09-11 22:23</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c8/7c/2aa545db.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张熠</span>
+                            </div>
+                            <div class="bd">老师好，我是用Python的，最近开始用VSCode，其他都挺好，就是最近发现一个问题，不知道是我使用问题还是存在bug：<br>安装Python插件后，使用socket模块，模块中的部分方法无法智能提示以及无法跳转到定义，例如：<br>s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)，建立socket对象后，s.connect()和s.bind()都存在上面存在的问题，不知道其他模块是否也存在类似问题，请帮忙看看如何解决？ <br></div>
+                            <span class="time">2018-09-15 18:18</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你是在用 https:&#47;&#47;github.com&#47;Microsoft&#47;vscode-python 吗，你已经提供了很好的问题报告，值得给这个插件开一个 issue</p>
+                                <p class="reply-time">2018-09-18 11:07</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ca/6a/10d837b1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">刘明浩</span>
+                            </div>
+                            <div class="bd">正在尝试用vscode 进行产品开发，但是发展cpptools 插件的intellisence 联想出非常多的符号，非常不准确，不知道是不是我什么地方设置的有问题？？ <br></div>
+                            <span class="time">2018-09-14 11:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你见到的自动补全有可能包含了基于文本的联想，可以试试关掉 editor.wordBasedSuggestions 看看是不是</p>
+                                <p class="reply-time">2018-09-18 11:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/ec/87/3ff8d8d1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">matrix</span>
+                            </div>
+                            <div class="bd">VS Code有和VS2015一样的深色主题吗？虽然VS Code也有深色主题，但是我感觉有色差，而且差很多，不知道是不是只有我有这个感觉 <br></div>
+                            <span class="time">2018-09-12 20:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你可以试试主题插件 Visual Studio Dark Theme https:&#47;&#47;marketplace.visualstudio.com&#47;items?itemName=Adrien.VisualStudioDarkTheme</p>
+                                <p class="reply-time">2018-09-13 11:00</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/a8/a9/31aa3e98.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">一半</span>
+                            </div>
+                            <div class="bd">打开一个几千行的文件 , 比如说第1260行有一个函数调用 , 按住ctrl点击该函数 , 跳到660行的函数定义了 ,  我怎么跳回到1260行来 <br></div>
+                            <span class="time">2018-09-12 13:59</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">macOS 上是 ctrl-</p>
+                                <p class="reply-time">2018-09-13 08:55</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c5/0c/6f07ebda.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">麦克</span>
+                            </div>
+                            <div class="bd">我也总结将近一年的vscode，在新建文件的时候，不能选择类型，比如，html或者css或者js等等，你们能吗？ <br></div>
+                            <span class="time">2018-09-12 11:43</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/57/4f/6fb51ff1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">一步</span>
+                            </div>
+                            <div class="bd">用了vscode两年多了，希望这个专栏能给我带来眼前一亮的感觉，能有收获 <br></div>
+                            <span class="time">2018-09-12 08:26</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/68/f0/7f05411b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">liaohaiming</span>
+                            </div>
+                            <div class="bd">老师我先问个问题：VS code 编写JAVA项目支不支持热部署，这样就不用每次改了代码后还要重启tomcat <br></div>
+                            <span class="time">2018-09-11 20:11</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个值得给 Java 插件 https:&#47;&#47;github.com&#47;redhat-developer&#47;vscode-java 开 issue！</p>
+                                <p class="reply-time">2018-09-11 23:23</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d1/91/86beceaf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Seven</span>
+                            </div>
+                            <div class="bd">launch.json 很难用 <br></div>
+                            <span class="time">2018-09-11 18:22</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">launch.json 确实难用。我之前写 Ruby 的 debugger 的时候，debugger 几乎没有文档，更别说 launch.json 怎么定制了 ... 一方面要理解每个配置，另一方面则是为了几个常用的场景提供 sample，方便大家修改。</p>
+                                <p class="reply-time">2018-09-11 23:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/7c/c8/da4f5c8f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">淋雨一直走</span>
+                            </div>
+                            <div class="bd">webstorm和vscode都有在用，也一直看到有人说vscode多好多好，但是个人体会就还是webstorm用起来顺手点，可能真是我还没领会到vscode的真正好处吧 <br></div>
+                            <span class="time">2018-09-11 13:45</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我也觉得 webstorm 挺好的用的</p>
+                                <p class="reply-time">2018-09-11 23:23</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/4a/c7/7c44a260.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">大斌</span>
+                            </div>
+                            <div class="bd">啥时候更新，等到花儿都谢啦 <br></div>
+                            <span class="time">2018-09-11 13:43</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/88/2c/87861bb1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">嚴脂红.*</span>
+                            </div>
+                            <div class="bd">非常期待，从.net fm就认识吕鹏了，感觉会有很大收获。(顺便问一下，.net fm什么时候更新啊？ ) <br></div>
+                            <span class="time">2018-09-10 19:59</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">.NET FM 今年也有更新，不过主要是 Lex 在维护，可以在 https:&#47;&#47;podcast.lextudio.com&#47; 收听。关于第三季，我们还在研究计划中。</p>
+                                <p class="reply-time">2018-09-11 11:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">love_chrissie</span>
+                            </div>
+                            <div class="bd">请问vscode的.json配置文件有没有详细的教程说明？比如配置运行c语言，配置调试等。 <br></div>
+                            <span class="time">2018-10-10 13:14</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
